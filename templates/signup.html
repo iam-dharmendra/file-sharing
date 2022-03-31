@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+signup
+{% endblock title %}
+
+
+{% block content %}
+
+<form action="" method="POST">
+    {% csrf_token %}
+    {{form}}
+    
+    CA<input type="radio" name='role1' value='CA' ></input>
+    PROMOTER<input type="radio" name='role1' value='PROMOTER'></input><br>
+    
+    <button type="submit" class="btn btn-secondary">Signup</button>
+
+</form>
+
+{% endblock content %}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main dashboard</title>
+
+    <style>
+        body {
+            margin: 30px;
+            padding: 30px;
+            background-color: rgb(210, 243, 252);
+            border: rgb(150, 150, 165) 4px solid;
+            border-radius: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin-top: 50px;
+
+        }
+
+        ul li {
+            display: inline-block;
+            margin-left: 5px;
+        }
+
+        #nav-link {
+            border: rgb(2, 0, 46) 2px solid;
+            margin-left: 900px;
+            padding: 5px;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+
+        #head {
+            border: rgb(2, 0, 46) 2px solid;
+            padding: 5px;
+            font-size: 30px;
+            border-radius: 10px;
+        }
+        #a{
+
+            border: rgb(2, 0, 46) 2px solid;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        #abc{
+
+            border: rgb(2, 0, 46) 2px solid;
+            padding: 5px;
+            border-radius: 10px;
+            margin-top: 10px;
+            background-color: whitesmoke;
+            width: 200px;
+        }
+        th{
+            border:solid 1px black
+        }
+        td{
+            border:solid 1px black
+            
+
+        }
+    </style>
+</head>
+
+<body>
+    <h2>welcome {{key.name}}</h2>
+  
+
+    <form method="POST">
+        {% csrf_token %}
+
+        <ul>
+            <li>
+                <div class="form-group">
+                    <input type="file" name="file" class="form-control custom-form"   placeholder="uplaod your file here"
+                        required="required" multiple accept=".jpg,.pdf,.png">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </li>
+            <li>
+                <div class="form-group">
+                    <input type="submit" value='upload'  name="upload">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </li>
+        </ul>
+
+    </form>
+
+ <hr>
+ <form method="POST">
+    {% csrf_token %}
+
+    <ul>
+        <li>
+            <div class="form-group">
+                <input type="email" name="reciever_email" class="form-control custom-form"   placeholder="enter reciever email id"
+                    required>
+                <div class="help-block with-errors"></div>
+            </div>
+        </li>
+        <li>
+            <label> Select file </label>  
+                <select required name='ofile'>  
+                 {% for i in files %}
+                    {% if i.file  %}
+                        <option required value={{i.file}} >{{i.file}}</option>>        
+                    {% endif %}
+                 {% endfor%}
+                </select>  
+        </li>
+        <li>
+            <div class="form-group">
+                <input type="submit" value='send'   name="send">
+                <div class="help-block with-errors"></div>
+            </div>
+        </li>
+    </ul>
+
+</form>
+    <div id='a'> <h3>Recieved list files :</h3>
+<hr>
+<table > 
+    
+    <th>Recieved files</th><th>Recieved From</th>
+        
+            {% for i in files %}
+            <tr>
+                {% if i.recieved_file%}
+                    <td><a href=http://127.0.0.1:8000/media/{{i.recieved_file}}>{{i.recieved_file}}</a></td>
+                    <td>{{i.received_From}}</td>
+                {%endif%}
+            </tr>
+            {% endfor %}
+        
+    </table>
+
+
+    </div>
+       
+
+</body>
+
+</html>

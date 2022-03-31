@@ -1,0 +1,27 @@
+{'id': 1, 'name': 'ankit', 'emai': 'ankit@gmail.com', 'age': 24, 'DOB': datetime.date(2022, 1, 28)}
+{'id': 2, 'name': 'khanak', 'emai': 'khanak@gmail.co', 'age': 22, 'DOB': datetime.date(2022, 1, 10)}
+{'id': 3, 'name': 'yash', 'emai': 'yash@gmail.com', 'age': 21, 'DOB': datetime.date(2022, 1, 6)}
+i
+i
+i
+i
+i
+i
+i
+i
+i
+{'id': 1, 'name': 'ankit', 'emai': 'ankit@gmail.com', 'age': 24, 'DOB': datetime.date(2022, 1, 28)}
+{'id': 2, 'name': 'khanak', 'emai': 'khanak@gmail.co', 'age': 22, 'DOB': datetime.date(2022, 1, 10)}
+{'id': 3, 'name': 'yash', 'emai': 'yash@gmail.com', 'age': 21, 'DOB': datetime.date(2022, 1, 6)}
+{'id': 1, 'name': 'ankit', 'emai': 'ankit@gmail.com', 'age': 24, 'DOB': datetime.date(2022, 1, 28)}
+{'id': 2, 'name': 'khanak', 'emai': 'khanak@gmail.co', 'age': 22, 'DOB': datetime.date(2022, 1, 10)}
+{'id': 3, 'name': 'yash', 'emai': 'yash@gmail.com', 'age': 21, 'DOB': datetime.date(2022, 1, 6)}
+{'id': 1, 'name': 'ankit', 'emai': 'ankit@gmail.com', 'age': 24, 'DOB': datetime.date(2022, 1, 28)}
+{'id': 2, 'name': 'khanak', 'emai': 'khanak@gmail.co', 'age': 22, 'DOB': datetime.date(2022, 1, 10)}
+{'id': 3, 'name': 'yash', 'emai': 'yash@gmail.com', 'age': 21, 'DOB': datetime.date(2022, 1, 6)}
+{'id': 1, 'name': 'ankit', 'emai': 'ankit@gmail.com', 'age': 24, 'DOB': datetime.date(2022, 1, 28)}
+{'id': 2, 'name': 'khanak', 'emai': 'khanak@gmail.co', 'age': 22, 'DOB': datetime.date(2022, 1, 10)}
+{'id': 3, 'name': 'yash', 'emai': 'yash@gmail.com', 'age': 21, 'DOB': datetime.date(2022, 1, 6)}
+{'id': 1, 'name': 'ankit', 'emai': 'ankit@gmail.com', 'age': 24, 'DOB': datetime.date(2022, 1, 28)}
+{'id': 2, 'name': 'khanak', 'emai': 'khanak@gmail.co', 'age': 22, 'DOB': datetime.date(2022, 1, 10)}
+{'id': 3, 'name': 'yash', 'emai': 'yash@gmail.com', 'age': 21, 'DOB': datetime.date(2022, 1, 6)}
